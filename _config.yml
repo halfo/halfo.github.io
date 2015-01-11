@@ -10,8 +10,7 @@ relative_permalinks: true
 
 # Setup
 title:               Tool Toul To
-tagline:             'Yet another programming blog'
-description:         ''
+tagline:             ' ‒ A programming blog'
 url:                 http://halfo.github.io
 baseurl:             /
 paginate:            5
