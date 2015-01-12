@@ -23,6 +23,7 @@
  * Slide effect
  * Posts and pages
  * Pagination
+ * Input
  * Reverse layout
  * Themes
  */
@@ -35,6 +36,7 @@
  */
 
 /* Prevent scroll on narrow devices */
+
 html,
 body {
   overflow-x: hidden;
@@ -50,6 +52,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  text-shadow: 0 0 1px;
+}
+
+.highlight pre {
+  background-color: #f0f0f0;
 }
 
 /*
@@ -186,6 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: none;
+  text-shadow: none;
   background-color: rgba(255,255,255,.1);
   border-color: transparent;
 }
@@ -211,17 +224,18 @@ a.sidebar-nav-item:focus {
   top:  1rem;
   left: 1rem;
   display: block;
-  width: 2.2rem;
-  padding: .5rem .65rem;
+  width: 1.8rem;
+  padding: .4rem .4rem;
   color: #505050;
-  background-color: #fff;
-  border-radius: 4px;
+  /*background-color: #f9f9f9;*/
+  border-radius: 2px;
   cursor: pointer;
 }
 .sidebar-toggle:before {
   display: block;
   content: "";
   width: 100%;
+
   padding-bottom: .125rem;
   border-top: .375rem double;
   border-bottom: .125rem solid;
@@ -241,7 +255,7 @@ a.sidebar-nav-item:focus {
 @media (min-width: 30.1em) {
   .sidebar-toggle {
     position: fixed;
-    width: 2.25rem;
+    width: 1.8rem;
   }
   .sidebar-toggle:before {
     padding-bottom: .15rem;
@@ -303,15 +317,18 @@ a.sidebar-nav-item:focus {
   background-color: #f9f9f9;
 }
 
+.page,
 .post {
-  padding: 2em;
+  padding: 1em;
 }
 @media (min-width: 54em) {
+  .page,
   .post {
     padding: 3em
   }
 }
 @media (min-width: 66em) {
+  .page,
   .post {
     padding: 4rem;
   }
@@ -332,9 +349,10 @@ a.sidebar-nav-item:focus {
 .post-date {
   display: block;
   margin-top: -.5rem;
-  margin-bottom: 4rem;
   color: #9a9a9a;
 }
+
+.space { margin-bottom: 3rem; }
 
 
 /*
@@ -389,6 +407,34 @@ a.pagination-item:hover {
   }
 }
 
+
+/*
+ * Input
+ *
+ * Silky layout for input field, with glowy effect.
+ */
+
+#search-box {
+  widows: 100%;
+  background-color: #e0e0e0;
+  padding: 5px;
+  display: block;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  font-size: 1rem;
+
+  width: 100%;
+  padding: 3px;
+  border: solid 5px #c9c9c9;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
 
 /*
  * Reverse layout
