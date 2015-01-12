@@ -13,7 +13,7 @@ title:               Tool Toul To
 tagline:             ' ‒ A programming blog'
 url:                 http://halfo.github.io
 baseurl:             /
-paginate:            5
+paginate:            4
 
 # About/contact
 author:
