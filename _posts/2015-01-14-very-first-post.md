@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Hello World!
+title: Very First Post!
 category: Misc
 ---
 
-So this site is alive now (yay)!! This is my very first post. Here I'll be posting on things that do interest me. I hope I'll be regular here.
+So the site is alive now (yay)!! Here I'll be posting on things that do interest me. I hope I'll be regular here.
 
 About this site, well it is hosted on [GitHub Pages](https://pages.github.com/). I used [Jekyll](http://jekyllrb.com) to build it and [jQuery](http://jquery.com) for decoration & search functionalities. About Jekyll, from [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
 
