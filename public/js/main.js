@@ -16,23 +16,23 @@
 
 
 $(function(){
-    $('input[type="text"]').keyup(function(){
-        var searchText = $(this).val();
+    $('input[type="text"]').keyup(function(e){
+      if (e.keyCode == 27) $(this).val("");
+      var searchText = $(this).val();
 
-        $('ul > li > a').each(function(){
-            var currentText = $(this).text(),
-                searchTextLength = searchText.length,
-                j = 0;
+      $('ul > li > a').each(function(){
+        var currentText = $(this).text(),
+            searchTextLength = searchText.length,
+            j = 0;
 
-            for (var i in currentText) {
-              if (searchTextLength == j) break;
-              if (currentText [i].toLowerCase() == searchText [j] ||
-                  currentText [i] == searchText [j])
-                ++j;
-            }
+        for (var i in currentText) {
+          if (searchTextLength == j) break;
+          if (currentText [i].toLowerCase() == searchText [j] ||
+              currentText [i] == searchText [j])
+            ++j;
+        }
 
-            console.log (searchText);
-            $(this).parent().toggle(searchTextLength == j);
-        });
+        $(this).parent().toggle(searchTextLength == j);
+      });
     });
 });

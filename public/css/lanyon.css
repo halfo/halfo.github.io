@@ -313,25 +313,19 @@ a.sidebar-nav-item:focus {
 
 .page,
 .post {
-  margin-bottom: 4em;
   background-color: #f9f9f9;
+  padding: 1.5em
 }
 
-.page,
-.post {
-  padding: 1em;
-}
+.page { margin-bottom: 1em; }
+.post { margin-bottom: 4em; }
 @media (min-width: 54em) {
-  .page,
-  .post {
-    padding: 3em
-  }
+  .page { padding: 2.5em }
+  .post { padding: 3em }
 }
 @media (min-width: 66em) {
-  .page,
-  .post {
-    padding: 4rem;
-  }
+  .page { padding: 2.9em }
+  .post { padding: 4em }
 }
 
 /* Blog post or page title */
@@ -409,16 +403,35 @@ a.pagination-item:hover {
 
 
 /*
+ * Archive
+ *
+ * Section type layout for containing multiple section in a page
+ */
+
+.archive {
+  margin-bottom: 1em;
+  background-color: #f9f9f9;
+  padding: .35em 1.5em;
+}
+@media (min-width: 54em) {
+  .archive { padding: ..5em 2em; }
+}
+@media (min-width: 66em) {
+  .archive { padding: .7em 2.9em; }
+}
+
+
+/*
  * Input
  *
  * Silky layout for input field, with glowy effect.
  */
 
 #search-box {
-  widows: 100%;
-  background-color: #e0e0e0;
-  padding: 5px;
-  display: block;
+  margin-bottom: 3em;
+}
+@media (max-width: 53em) {
+  #search-box { margin-top: -1em; }
 }
 
 input[type="text"] {
@@ -428,12 +441,39 @@ input[type="text"] {
 
   width: 100%;
   padding: 3px;
-  border: solid 5px #c9c9c9;
+  border: solid 5px #d0d0d0;
   transition: border 0.3s;
 }
 
 input[type="text"]:focus {
   outline: none;
+}
+
+/*
+ * Button Tag
+ *
+ * Tag like buttons using link
+ */
+
+.btn-tag {
+  background-color: #BC0005;
+  font-weight: 400;
+  border-radius: 0.2em;
+  font-size: 85%;
+
+  display: inline;
+  /*margin: 5% auto;*/
+  padding: 0.2em 0.6em 0.3em;
+
+  line-height: 1;
+  color: #FFF;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.btn-tag:hover {
+  background-color: purple;
+  text-shadow: none;
 }
 
 /*
