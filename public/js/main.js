@@ -1,3 +1,5 @@
+// Sidebar Functionality
+
 (function(document) {
   var toggle = document.querySelector('.sidebar-toggle');
   var sidebar = document.querySelector('#sidebar');
@@ -14,6 +16,8 @@
   }, false);
 })(document);
 
+
+// Wiki Page's Search Bar (Fuzzy String Searching)
 
 $(function(){
     $('input[type="text"]').keyup(function(e){
@@ -35,4 +39,25 @@ $(function(){
         $(this).parent().toggle(searchTextLength == j);
       });
     });
+});
+
+
+// Category Page's Coloring
+
+var tag_color = { programming : "rgb(188, 0, 5)",
+                  data_structure : "rgb(100, 69, 57)",
+                  string : "rgb(56, 123, 148)",
+                  graph : "rgb(125, 188, 178)",
+                  math : "rgb(153, 0, 76)",
+                  misc : "rgb(158, 149, 153)"};
+
+$(function(){
+  $('.archive.tag > a').each(function(){
+    var tag = $(this).attr('href').substring (1),
+        color = tag_color [tag];
+
+
+    $(this).css ('background-color', color);
+    $('.archive.category.' + tag).css('border-left-color', color);
+  });
 });

@@ -4,18 +4,30 @@ title: Category
 number: 2
 ---
 
-<section class="archive">
+<div class="archive tag">
+<h1>Tags</h1>
+<br>
 {% for category in site.categories %}
-  <li><a name="{{ category | first }}">{{ category | first }}</a>
-    <ul>
-    {% for posts in category %}
-      {% for post in posts %}
-      	{% if post.url %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    {% endfor %}
-    </ul>
-  </li>
+<a class="category btn-tag {{ category | first }}" href="#{{ category | first }}">
+  {{ category | first | replace: '_', ' ' }}
+</a>
 {% endfor %}
-</section>
+</div>
+
+{% for category in site.categories %}
+  <br>
+  <div class="archive category {{ category | first }}">
+  <h2><a name="{{ category | first }}" style="color: inherit; text-shadow: 0 0 1px;">
+    {{ category | first | capitalize | replace: '_', ' ' }}
+  </a></h2>
+  <ul>
+  {% for posts in category %}
+    {% for post in posts %}
+      {% if post.url %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  </ul>
+  </div>
+{% endfor %}
