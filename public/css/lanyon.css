@@ -477,7 +477,7 @@ input[type="text"]:focus {
   vertical-align: middle;
 }
 .btn-tag:hover {
-  opacity: .9;
+  opacity: .94;
   /*text-shadow: none;*/
   /*background-color: #BC0005;*/
 }
