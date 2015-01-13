@@ -21,25 +21,22 @@ if (typeof jQuery !== 'undefined') {
 // Wiki Page's Search Bar (Fuzzy String Searching)
 
   $(function(){
-      $('input[type="text"]').keyup(function(e){
-        if (e.keyCode == 27) $(this).val("");
-        var searchText = $(this).val();
-
-        $('ul > li > a').each(function(){
-          var currentText = $(this).text(),
-              searchTextLength = searchText.length,
-              j = 0;
-
-          for (var i in currentText) {
-            if (searchTextLength == j) break;
-            if (currentText [i].toLowerCase() == searchText [j] ||
-                currentText [i] == searchText [j])
-              ++j;
-          }
-
-          $(this).parent().toggle(searchTextLength == j);
-        });
+    $('input[type="text"]').keyup(function(e){
+      if (e.keyCode == 27) $(this).val("");
+      var searchText = $(this).val();
+      $('ul > li > a').each(function(){
+        var currentText = $(this).text(),
+            searchTextLength = searchText.length,
+            j = 0;
+        for (var i in currentText) {
+          if (searchTextLength == j) break;
+          if (currentText [i].toLowerCase() == searchText [j] ||
+              currentText [i] == searchText [j])
+            ++j;
+        }
+        $(this).parent().toggle(searchTextLength == j);
       });
+    });
   });
 
 
@@ -57,6 +54,8 @@ if (typeof jQuery !== 'undefined') {
       var tag = $(this).attr('href').substring (1),
           color = tag_color [tag];
 
+      if (typeof tag_color [tag] !== 'undefined')
+        color = tag_color [tag];
 
       $(this).css ('background-color', color);
       $('.archive.category.' + tag).css('border-left-color', color);

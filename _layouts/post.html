@@ -11,14 +11,14 @@ layout: default
 
 
 <div class="pagination">
-  {% if page.next %}
-    <a class="pagination-item older" href="{{ site.BASE_PATH }}{{ page.next.url }}">Older</a>
+  {% if page.previous %}
+    <a class="pagination-item older" href="{{ site.BASE_PATH }}{{ page.previous.url }}">Older</a>
   {% else %}
     <span class="pagination-item older">Older</span>
   {% endif %}
 
-  {% if page.previous %}
-    <a class="pagination-item newer" href="{{ site.BASE_PATH }}{{ page.previous.url }}">Newer</a>
+  {% if page.next %}
+    <a class="pagination-item newer" href="{{ site.BASE_PATH }}{{ page.next.url }}">Newer</a>
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
