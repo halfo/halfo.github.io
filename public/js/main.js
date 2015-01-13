@@ -42,23 +42,22 @@ if (typeof jQuery !== 'undefined') {
 
   // Category Page's Coloring
 
-  var tag_color = { programming : "rgb(188, 0, 5)",
-                    data_structure : "rgb(100, 69, 57)",
-                    string : "rgb(56, 123, 148)",
-                    graph : "rgb(125, 188, 178)",
-                    math : "rgb(153, 0, 76)",
-                    misc : "rgb(158, 149, 153)"};
+  var tag_color = ["#644539", "#BC0005", "#d35400", "#16a085", "#99004C",
+                   "#f1c40f", "#3498db", "#8e44ad", "#c0392b", "#2c3e50"];
 
   $(function(){
+    var tagLength = tag_color.length,
+        counter = 0;
     $('.archive.tag > a').each(function(){
-      var tag = $(this).attr('href').substring (1),
-          color = tag_color [tag];
+      if (counter >= tagLength) counter = 0;
 
-      if (typeof tag_color [tag] !== 'undefined')
-        color = tag_color [tag];
+      var tag = $(this).attr('href').substring (1),
+          color = tag_color [counter];
 
       $(this).css ('background-color', color);
       $('.archive.category.' + tag).css('border-left-color', color);
+
+      ++counter;
     });
   });
 
