@@ -4,7 +4,7 @@ title: Macros Are Evil
 category: Competitive_Programming
 ---
 
-In Competitive programming, we see macros so often. They are easy to write, make things faster, more flexible etc. But many doesn't understand (including me) them properly and it's easy to write a bad macro. For example, the two most common macros,
+In Competitive programming, we see macros very often. They are easy to write, make things faster, more flexible etc. But many don't understand (including me) them properly and it's easy to write a bad macro. For example, the two most common macros,
 
 {% highlight cpp %}
 #define min(a, b) ((a) < (b) ? (a) : (b))
@@ -26,7 +26,7 @@ template <class T, class U> inline T min (T a, U b) { return a < b ? a : b; }
 Another common thing is macro-defined constants, such as `#define SIZE 100`, which is fine. But the problem appears when someone defines macros like this,
 
 {% highlight cpp %}
-// I see this macro very often
+// I see this macro too often
 #define INF 1 << 30
 
 // here is the pitfall
