@@ -11,6 +11,7 @@ relative_permalinks: true
 # Setup
 title:               Myo͞o
 tagline:             ' ‒ Just another programming blog'
+description:         'Myo͞o'
 url:                 http://halfo.github.io
 baseurl:             /
 paginate:            4

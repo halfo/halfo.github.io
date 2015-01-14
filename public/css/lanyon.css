@@ -436,7 +436,13 @@ a.pagination-item:hover {
 
 #search-box {
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+@media (min-width: 30.1em) {
+  #search-box {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
 }
 
 input[type="text"] {
@@ -453,6 +459,10 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
+}
+
+@media (max-width: 24em) {
+  .date { display: none; }
 }
 
 /*
@@ -477,10 +487,9 @@ input[type="text"]:focus {
   white-space: nowrap;
   vertical-align: baseline;
 }
+
 .btn-tag:hover {
   opacity: .94;
-  /*text-shadow: none;*/
-  /*background-color: #BC0005;*/
 }
 
 /*

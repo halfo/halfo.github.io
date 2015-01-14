@@ -25,7 +25,7 @@ if (typeof jQuery !== 'undefined') {
       if (e.keyCode == 27) $(this).val("");
       var searchText = $(this).val();
 
-      $('ul > li').each(function(){
+      $('ul > li > a').each(function(){
         var currentText = $(this).text(),
             searchTextLength = searchText.length,
             j = 0;
@@ -44,7 +44,7 @@ if (typeof jQuery !== 'undefined') {
 
   // Category Page's Coloring
 
-  var tag_color = ["#644539", "#BC0005", "#d35400", "#16a085", "#99004C",
+  var tag_color = ["#644539", "#99004C", "#d35400", "#16a085", "#BC0005",
                    "#f1c40f", "#3498db", "#8e44ad", "#c0392b", "#2c3e50"];
 
   $(function(){
