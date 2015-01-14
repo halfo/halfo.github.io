@@ -246,6 +246,12 @@ a.sidebar-nav-item:focus {
           box-sizing: border-box;
 }
 
+
+.sidebar-toggle:hover {
+  background-color: #f9f9f9;
+  transition: all .4s ease-in-out;
+}
+
 .sidebar-toggle:active,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
