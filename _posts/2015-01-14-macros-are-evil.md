@@ -4,7 +4,7 @@ title: Macros Are Evil
 category: Competitive_Programming
 ---
 
-In Competitive programming, we see macros very often. They are easy to write, make things faster, more flexible etc. But many don't understand (including me) them properly and it's easy to write a bad macro. For example, the two most common macros,
+In competitive programming, we see macros very often. They are easy to write, make things faster, more flexible etc. But many don't understand (including me) them properly and it's easy to write a bad macro. For example, the two most common macros,
 
 {% highlight cpp %}
 #define min(a, b) ((a) < (b) ? (a) : (b))
