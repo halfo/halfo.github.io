@@ -17,15 +17,15 @@ number: 2
 {% for category in site.categories %}
   <br>
   <div class="archive category {{ category | first }}">
-  <h2><a name="{{ category | first }}" style="color: inherit; text-shadow: 0 0 1px;">
+  <h2><small><a name="{{ category | first }}" style="color: inherit; text-shadow: 0 0 1px;">
     {{ category | first | capitalize | replace: '_', ' ' }}
-  </a></h2>
+  </a></small></h2>
   <ul>
   {% for posts in category %}
     {% for post in posts %}
       {% if post.url %}
         <li>
-          <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+          <small><a class="title" href="{{ post.url }}">{{ post.title }}</a></small>
           <small class="date" style="float: right">{{ post.date | date_to_string }}</small>
         </li>
       {% endif %}
