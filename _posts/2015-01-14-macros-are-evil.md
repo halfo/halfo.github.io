@@ -37,4 +37,4 @@ Now, can you guess what would be the value of `x`?
 
 <br>
 
-It would better to use **constant variable** (lol) instead of such macro, unless one is pretty sure what he is doing. For further reading, see [this](https://gcc.gnu.org/onlinedocs/cpp/Macro-Pitfalls.html).
+It would better to use *constant variable* (lol) instead of such macro, unless one is pretty sure what he is doing. For further reading, see [this](https://gcc.gnu.org/onlinedocs/cpp/Macro-Pitfalls.html).
