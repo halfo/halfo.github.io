@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disjoin-Set Union
+title: Disjoint-Set Union
 category: Data_Structure
 ---
 
