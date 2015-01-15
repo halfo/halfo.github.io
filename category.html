@@ -7,7 +7,7 @@ number: 2
 <div class="archive tag">
 <h1>Tags</h1>
 <br>
-{% for category in site.categories %}
+{% for category in site.categories%}
 <a class="category btn-tag {{ category | first }}" href="#{{ category | first }}">
   {{ category | first | replace: '_', ' ' }}
 </a>
@@ -18,7 +18,7 @@ number: 2
   <br>
   <div class="archive category {{ category | first }}">
   <h2><small><a name="{{ category | first }}" style="color: inherit; text-shadow: 0 0 1px;">
-    {{ category | first | capitalize | replace: '_', ' ' }}
+    {{ category | first | replace: '_', ' ' | capitalize_all }}
   </a></small></h2>
   <ul>
   {% for posts in category %}
