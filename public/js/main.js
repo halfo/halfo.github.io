@@ -44,8 +44,8 @@ if (typeof jQuery !== 'undefined') {
 
   // Category Page's Coloring
 
-  var tag_color = ["#644539", "#99004C", "#d35400", "#16a085", "#BC0005",
-                   "#f1c40f", "#3498db", "#8e44ad", "#c0392b", "#2c3e50"];
+  var tag_color = ["#644539", "#99004C", "#16a085", "#8e44ad", "#BC0005",
+                   "#f1c40f", "#3498db", "#d35400", "#c0392b", "#2c3e50"];
 
   $(function(){
     var tagLength = tag_color.length,
