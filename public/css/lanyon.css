@@ -64,6 +64,10 @@ a:focus {
   background-color: #f0f0f0;
 }
 
+img {
+  display: inline-block;
+}
+
 /*
  * Wrapper
  *

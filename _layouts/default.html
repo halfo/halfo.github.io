@@ -13,7 +13,7 @@
         <div class="container">
           <h3 class="masthead-title">
             {% if page.number %}
-              <a href="/" title="Home">{{ page.title }} ‒ {{ site.title }}</a>
+              {{ page.title }} ‒ <a href="/" title="Home">{{ site.title }}</a>
             {% else %}
               <a href="/" title="Home">{{ site.title }}</a>
             {% endif %}

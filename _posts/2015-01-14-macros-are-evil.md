@@ -15,11 +15,11 @@ There is nothing wrong about them, unless someone writes `min (x (), y ())`, whi
 
 So it would be better a choice to use template class whenever its possible. Make them *inline* if you are really concerned about their speed.
 
-```cpp
+{% highlight cpp %}
 template <class T, class U> inline T max (T a, U b) { return a > b ? a : b; }
 
 template <class T, class U> inline T min (T a, U b) { return a < b ? a : b; }
-```
+{% endhighlight %}
 
 <br>
 
