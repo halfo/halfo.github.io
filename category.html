@@ -18,7 +18,7 @@ number: 2
   <br>
   <div class="archive category {{ category | first }}">
   <h2><small><a name="{{ category | first }}" style="color: inherit; text-shadow: 0 0 1px;">
-    {{ category | first | replace: '_', ' ' | capitalize_all }}
+    {{ category | first | replace: '_', ' ' | capitalize }}
   </a></small></h2>
   <ul>
   {% for posts in category %}
