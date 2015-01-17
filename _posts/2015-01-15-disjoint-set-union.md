@@ -39,4 +39,4 @@ Union by rank আর path compression, এই দুইটা অপটিমা
 {% gist halfo/e77f1e50ec17eab6eb31 Randomized_DSU.cpp %}
 
 <br>
-DSU দিয়ে চমৎকার সব প্রবলেম যায়, যেমন কানেক্টেড কম্পোনেন্ট বের করা, অনলাইনে বাইপার্টাইট গ্রাফ কিনা চেক করা, অনলাইনে bridge বের করা, অফলাইনে বেশ কিছু RMQ প্রবলেম অথবা LCA ইত্যাদি বের করা। [Persistant ডাটা-স্ট্রাকচার](http://en.wikipedia.org/wiki/Persistent_data_structure) হিসেবেও এটা [ব্যাবহার](http://codeforces.com/blog/entry/7383#comment-161520) করা যায়। DSU নিয়ে আরও জানতে চাইলে [e-maxx](http://e-maxx.ru/algo/dsu) তো আছেই!
+DSU দিয়ে চমৎকার সব প্রবলেম যায়, যেমন কানেক্টেড কম্পোনেন্ট বের করা, অনলাইনে বাইপার্টাইট গ্রাফ কিনা চেক করা, অনলাইনে bridge বের করা, অফলাইনে বেশ কিছু RMQ প্রবলেম অথবা LCA ইত্যাদি বের করা। [Persistant ডাটা-স্ট্রাকচার](http://en.wikipedia.org/wiki/Persistent_data_structure) হিসেবেও এটা [ব্যাবহার](http://codeforces.com/blog/entry/7383#comment-161520) করা যায়। আর DSU নিয়ে আরও জানতে চাইলে [e-maxx](http://e-maxx.ru/algo/dsu) তো আছেই!
