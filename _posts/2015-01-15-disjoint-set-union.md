@@ -34,11 +34,9 @@ DSU এর টাইম কমপ্লেক্সিটি মূলত নি
 
 Union by rank আর path compression, এই দুইটা অপটিমাইজেশনকে একত্র করলে DSU তে প্রতিটা অপারেশনের [amortized](http://en.wikipedia.org/wiki/Amortized_analysis) টাইম দাঁড়াবে <span style="font-size: .8em">$$O(\alpha(n))$$</span>.
 
-**Bonus:** Union by rank সাধারণত দরকার পড়েনা। বেশিরভাগ সময় শুধু path compression টেকনিক দিয়েই কাজ হয়ে যায়। তাও রিস্ক ফ্রি থাকার জন্যে (আসলে এমনিতেই) ট্রি-গুলোকে র‍্যান্ডমলি র‍্যাঙ্ক দিয়ে দেয়া যায়। এতে টাইম কমপ্লেক্সিটি কিছুটা বেটার হয়।
+**Bonus:** Union by rank সাধারণত দরকার পড়েনা। বেশিরভাগ সময় শুধু path compression টেকনিক দিয়েই কাজ হয়ে যায়। তাও চাইলে ট্রি-গুলোকে র‍্যান্ডমলি র‍্যাঙ্ক দিয়ে দেয়া যায়। এতে কোডও ছোট হয়, টাইম কমপ্লেক্সিটিও কিছুটা বেটার হয়।
 
 {% gist halfo/e77f1e50ec17eab6eb31 Randomized_DSU.cpp %}
 
 <br>
-DSU দিয়ে চমৎকার সব প্রবলেম, বিশেষত query বেইস্‌ড প্রবলেম গুলো  অফলাইনে সল্ভ করা যায়। [Persistant ডাটা-স্ট্রাকচার](http://en.wikipedia.org/wiki/Persistent_data_structure) হিসেবেও এটা ব্যাবহার করা যায় ([লিঙ্ক](http://codeforces.com/blog/entry/7383#comment-161520))। DSU এর উপর শাফায়েতের ব্লগে বেশ কিছু প্রবলেমের লিঙ্ক দেয়া আছে, সবগুলো সল্ভ করে ফেলো।
-
-তাহলে আপাতত এই-ই। ধন্যবাদ!
+DSU দিয়ে চমৎকার সব প্রবলেম যায়, যেমন কানেক্টেড কম্পোনেন্ট বের করা, অনলাইনে বাইপার্টাইট গ্রাফ কিনা চেক করা, অনলাইনে bridge বের করা, অফলাইনে বেশ কিছু RMQ প্রবলেম অথবা LCA ইত্যাদি বের করা। [Persistant ডাটা-স্ট্রাকচার](http://en.wikipedia.org/wiki/Persistent_data_structure) হিসেবেও এটা [ব্যাবহার](http://codeforces.com/blog/entry/7383#comment-161520) করা যায়। DSU নিয়ে আরও জানতে চাইলে [e-maxx](http://e-maxx.ru/algo/dsu) তো আছেই!
