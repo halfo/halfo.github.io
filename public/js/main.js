@@ -59,6 +59,8 @@ if (typeof jQuery !== 'undefined') {
       $(this).css ('background-color', color);
       $('.archive.category.' + tag).css('border-left-color', color);
 
+      console.log ($('.archive.category .' + tag));
+      console.log ($('.archive.category.' + tag).css ('border-left-color'));
       ++counter;
     });
   });
