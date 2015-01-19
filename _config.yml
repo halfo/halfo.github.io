@@ -13,7 +13,7 @@ title:               Myo͞o
 tagline:             ' ‒ Just another programming blog'
 description:         'Myo͞o'
 url:                 http://halfo.github.io
-baseurl:             /
+baseurl:             http://halfo.github.io
 paginate:            4
 
 # About/contact
