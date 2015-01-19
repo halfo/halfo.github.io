@@ -8,7 +8,7 @@ category: CPP
 This blog is greatly inspired from <a href="http://community.topcoder.com/tc?module=MemberProfile&cr=8357090">misof's</a> comments on <a href="http://www.quora.com/Michal-Fori%C5%A1ek">Quora</a>.
 </div>
 
-In competitive programming, we see macros very often. They are easy to write, make things faster, more flexible etc. But many don't understand (including me) them properly and it's easy to write a bad macro. For example, the two most common macros,
+In competitive programming, we see (C++) macros very often. They are easy to write, make things faster, more flexible etc. But many don't understand (including me) them properly and it's easy to write a bad macro. For example, the two most common macros,
 
 {% highlight cpp %}
 #define min(a, b) ((a) < (b) ? (a) : (b))
