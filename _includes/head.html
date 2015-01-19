@@ -9,7 +9,7 @@
       <meta property="og:description" content="Just another programming blog">
     {% else %}
       <meta property="og:title" content="{{ page.title }} ‒ {{ site.title }}">
-      <meta property="og:description" content="{{ post.content | strip_html | truncatewords: 10 }}">
+      <meta property="og:description" content="{{ page.content | strip_html | truncatewords: 10 }}">
   {% endif %}
   <meta property="og:image" content="{{ site.baseurl }}public/images/favicon.png">
 
