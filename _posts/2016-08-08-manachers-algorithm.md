@@ -15,15 +15,15 @@ Here, `p_lens[0]` contains information about even lenght-ed palindrome (as 0 is 
 
 $$
 \begin{align}
-center =
+center &=
 \begin{cases}
 i,  & \text{if $i$ is odd} \\[2ex]
 between\;i-1\;and\;i, & \text{if $i$ is even}
 \end{cases}
 
 \\
-\text{length =  2 * $p\_lens$[$type$][$i$] + $type$} \\
-\text{start  =  $i$ - $p\_lens$[$type$]$i$]}
+length &= \text{2 * $p\_lens$[$type$][$i$] + $type$} \\
+start &= \text{$i$ - $p\_lens$[$type$]$i$]}
 \end{align}
 $$
 
