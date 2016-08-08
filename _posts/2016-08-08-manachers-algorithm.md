@@ -14,6 +14,7 @@ The most common implementation looks like [this](http://pastebin.com/zg146Gd4). 
 Here, `p_lens[0]` contains information about even lenght-ed palindrome (as 0 is even) and `p_lens[1]` contains about the odd ones. Some generalized formulas:
 
 $$
+\begin{align}
 center =
 \begin{cases}
 i,  & \text{if $i$ is odd} \\[2ex]
@@ -21,8 +22,9 @@ between\;i-1\;and\;i, & \text{if $i$ is even}
 \end{cases}
 
 \\
-\text{length:  2 * $p\_lens$[$type$][$i$] + $type$} \\
-\text{start :  $i$ - $p\_lens$[$type$]$i$]}
+\text{length =  2 * $p\_lens$[$type$][$i$] + $type$} \\
+\text{start  =  $i$ - $p\_lens$[$type$]$i$]}
+\end{align}
 $$
 
 You can always assign them to more meaningful names if you want to, `*evens = p[0], *odds = p[1]`.
