@@ -17,7 +17,7 @@ $$
 center =
 \begin{cases}
 i,  & \text{if $i$ is odd} \\[2ex]
-between i-1 and i, & \text{if $i$ is even}
+between\,i-1\,and\,i, & \text{if $i$ is even}
 \end{cases}
 $$
 
