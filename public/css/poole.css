@@ -428,3 +428,9 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+.MathJax_Display { 
+    font-size: .8em;
+    text-align: left !important;
+    display: inline !important;
+}
