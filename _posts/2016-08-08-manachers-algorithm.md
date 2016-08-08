@@ -20,8 +20,7 @@ center &=
 i,  & \text{if $i$ is odd} \\[2ex]
 between\;i-1\;and\;i, & \text{if $i$ is even}
 \end{cases}
-
-\\
+\\\\
 length &= \text{2 * $p\_lens$[$type$][$i$] + $type$} \\
 start &= \text{$i$ - $p\_lens$[$type$]$i$]}
 \end{align}
