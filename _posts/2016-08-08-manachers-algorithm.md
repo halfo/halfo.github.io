@@ -21,6 +21,9 @@ i,  & \text{if $i$ is odd} \\[2ex]
 between\;i-1\;and\;i, & \text{if $i$ is even}
 \end{cases}
 $$
+\\
+\text{length:  2 * $p_lens$[$type$][$i$] + $type$} \\
+\text{start :  $i$ - $p_lens$[$type$]$i$]}
 </span></p>
 
 
