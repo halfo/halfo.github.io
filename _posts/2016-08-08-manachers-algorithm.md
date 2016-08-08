@@ -11,7 +11,8 @@ The most common implementation looks like [this](http://pastebin.com/zg146Gd4). 
 
 {% gist halfo/c1520ed76fc5c01631536b359264de3b Manachers_Algorithm.cpp %}
 
-Here, `p_lens[0]` contains information about even lenght-ed palindrome (as 0 is even) and `p_lens[1]` contains about the odd ones. You can always assign them to more meaningful names if you want to, `*evens = p[0], *odds = p[1]`. Some generalized formulas:
+<br/>
+Here, `p_lens[0]` contains information about even lenght-ed palindrome (as 0 is even) and `p_lens[1]` contains about the odd ones. You can always assign them to more meaningful names if you want to, say `*evens = p[0], *odds = p[1]`. Some generalized formulas:
 
 $$
 \begin{align}
@@ -26,4 +27,5 @@ start &= \text{$i$ - $p\_lens$[$type$]$i$]}
 \end{align}
 $$
 
+<br/>
 That's all!. Thanks for reading. GL & HF.
