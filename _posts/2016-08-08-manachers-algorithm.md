@@ -23,12 +23,13 @@ between\;i-1\;and\;i, & \text{if $i$ is even}
 $$
 </span></p>
 
-<span style="font-size: .8em">
+<p style="text-align: center"><span style="font-size: .8em">
 $$
+\\
 \text{length:  2 * $p\_lens$[$type$][$i$] + $type$} \\
 \text{start :  $i$ - $p\_lens$[$type$]$i$]}
 $$
-</span>
+</span></p>
 
 
 You can always assign them to more meaningful names if you want to, `*evens = p[0], *odds = p[1]`.
