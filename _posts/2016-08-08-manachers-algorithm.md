@@ -20,11 +20,15 @@ center =
 i,  & \text{if $i$ is odd} \\[2ex]
 between\;i-1\;and\;i, & \text{if $i$ is even}
 \end{cases}
-\\
-\text{length:  2 * $p_lens$[$type$][$i$] + $type$} \\
-\text{start :  $i$ - $p_lens$[$type$]$i$]}
 $$
 </span></p>
+
+<span style="font-size: .8em">
+$$
+\text{length:  2 * $p\_lens$[$type$][$i$] + $type$} \\
+\text{start :  $i$ - $p\_lens$[$type$]$i$]}
+$$
+</span>
 
 
 You can always assign them to more meaningful names if you want to, `*evens = p[0], *odds = p[1]`.
