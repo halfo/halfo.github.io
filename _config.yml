@@ -4,16 +4,14 @@ highlighter:         pygments
 
 # Permalinks
 #
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
 
 # Setup
 title:               Myo͞o
 tagline:             ' ‒ Just another programming blog'
 description:         'Myo͞o'
 url:                 http://halfo.github.io
-baseurl:             http://halfo.github.io
+baseurl:             http://halfo.github.io/
 paginate:            4
 
 # About/contact
