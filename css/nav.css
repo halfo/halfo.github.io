@@ -16,11 +16,11 @@
 
 .nav-layout {
   --paddding-aside: 8vw;
+  padding: 1.5rem var(--paddding-aside);
+  width: calc(100vw - 2 * var(--paddding-aside));
 
   font-size: 1.9rem;
   font-weight: 500;
-  padding: 1.5rem var(--paddding-aside);
-  width: calc(100vw - 2 * var(--paddding-aside));
 
   display: flex;
   flex-direction: row;
