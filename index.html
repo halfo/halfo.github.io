@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="preload" href="./font/Rotunda-Bold.woff2" as="font" crossorigin>
-  <link rel="preload" href="./font/Rotunda-Medium.woff2" as="font" crossorigin>
-  <link rel="preload" href="./font/Rotunda-Regular.woff2" as="font" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
   <title></title>
   <meta name="description" content="">
@@ -23,7 +23,7 @@
 
   <link rel="canonical" href="">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="apple-touch-icon" href="./img/logo.svg">
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -34,10 +34,38 @@
 
 <body>
   <div id="app">
-    Hello World
+    <section class="nav nav-glass-effect sticky">
+      <div class="nav-layout">
+        <div class="home">
+          <a class="hover-underline-animate" href="/">Home</a>
+        </div>
+
+        <div class="nav-btns">
+          <a class="hover-underline-animate" href="#about">About me</a>
+          <a class="hover-underline-animate" href="#testimonial">Testimonial</a>
+          <a class="hover-underline-animate" href="#session">Session</a>
+          <a class="hover-underline-animate" href="#faq">FAQ</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="banner" class="container">Banner</section>
+      <section id="about" class="container">About</section>
+      <section id="testimonial" class="container">Testimonial</section>
+      <section id="session" class="container">Session</section>
+      <section id="faq" class="container">FAQ</section>
+    </main>
+    <section class="footer"></section>
   </div>
 
-  <style></style>
+  <style>
+.container:not(.nav) {
+  background-color: red;
+  height: 700px;
+}
+
+  </style>
   <script src="js/main.js"></script>
 </body>
 

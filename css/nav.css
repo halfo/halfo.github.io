@@ -1,0 +1,71 @@
+.nav {
+  width: 100vw;
+}
+
+.nav-glass-effect {
+  background: rgba(33, 22, 22, 0.75); /* same as primary black */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.nav-layout {
+  --paddding-aside: 8vw;
+
+  font-size: 1.9rem;
+  font-weight: 500;
+  padding: 1.5rem var(--paddding-aside);
+  width: calc(100vw - 2 * var(--paddding-aside));
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-layout>div {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.nav-layout a {
+  color: var(--primary-white);
+  text-decoration: none;
+}
+
+.hover-underline-animate {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animate::after {
+  content: '';
+  position: absolute;
+  width: 110%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -1px;
+  left: -5%;
+  background-color: var(--primary-white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animate:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    margin-top: 0;
+  }
+  .nav {
+    display: none;
+  }
+}

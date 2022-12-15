@@ -1,0 +1,156 @@
+:root {
+  --primary-black: rgb(33, 22, 22);
+  --secondary-black: rgb(229,225,255);
+  --primary-white: white;
+  --secondary-white: rgba(29,23,71, .7);
+
+  --black1: #2a1a1a;
+  --black2: #1d2026;
+  --black3: #0d0d16;
+  --maroon1: #682d2e;
+  --seagreen1: #325162;
+  --gunmetal: #2c2f41;
+}
+
+html {
+  color: var(--primary-white);
+  background-color: var(--primary-black);
+
+  height: 100%;
+  font-family: 'Open Sans';
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+#app {
+  min-height: var(--viewport-height);
+}
+
+main {
+  margin-top: 5.66rem; /* For nav */
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+/*
+ * Remove text-shadow in selection highlight.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img, svg, video { vertical-align: middle }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  color: #1f1235;
+  font-size: 3.5rem;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 0px;
+  color: #1f1235;
+  font-size: 3rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 1.5rem;
+  color: #1f1235;
+  font-size: 2rem;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #1b1425;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.container {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  padding: 2.5rem;
+  border-radius: 3px;
+  background-color: #e2daeb; /* FIXME */
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+ 
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2.7rem;
+  }
+  .card {
+     padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  .container {
+    width: 85%;
+  }
+}
