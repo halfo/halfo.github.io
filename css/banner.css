@@ -1,0 +1,6 @@
+@import url(./button.css);
+
+#banner {
+  height: calc(100vh - var(--banner-top-margin));
+  /* height: calc(min(100vh - var(--banner-top-margin), 800px) - 2rem); */
+}

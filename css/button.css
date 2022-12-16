@@ -1,0 +1,25 @@
+.btn-depressed {
+  --bg: var(--secondary-black);
+  --border: var(--secondary-white);
+}
+
+.btn-primary {
+  --bg: var(--gradient-lighter);
+  --border: var(--gradient-lighter);
+}
+
+.btn {
+  font-weight: 500;
+  border-radius: 50px;
+
+  color: var(--primary-white);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  transition: 0.2s;
+}
+
+.btn:hover:not(:active) {
+  transform: translate(0.40rem,-0.40rem);
+  background: var(--bg);
+  box-shadow: -0.40rem 0.40rem var(--secondary-white);
+}

@@ -6,7 +6,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&text=hasib billah&display=swap" rel="stylesheet">
 
   <title>Hasib Billah | Helping others to excel in their career</title>
   <meta name="description" content="">
@@ -39,8 +38,9 @@
   <div id="app">
     <nav class="nav-glass-effect sticky">
       <div class="nav-layout">
-        <div>
-          <a class="home gradient-bg" href="/">hasib billah</a>
+        <div class="home">
+          <img height="27" width="27" src="./img/logo.svg"></img>
+          <a class="hover-underline-animate" href="/">Hasib Billah</a>
         </div>
 
         <div class="nav-btns">
@@ -55,7 +55,25 @@
     <main>
       <section id="banner" class="container">
         <div class="dp"></div>
-        <div class="slogan"></div>
+        <div class="slogan">
+          <h1 class="title">
+            <span class="sub-title line-break">Hey Freshers!</span>
+            <span class="line-break">Land your <span class="gradient-bg">next job</span></span>
+            <span>with me!</span>
+          </h1>
+
+          <p>
+            From my experience, what I have seen is that interview is a very unpredictable process.
+            And many good candidates make subtle but huge blunders that they didn't notice.
+            Also, there are some key factors, if one can pull them up, the chance for them to land a job
+            goes real high. Join my session to learn more about these.
+          </p>
+
+          <div class="action-btns">
+            <button class="btn btn-depressed">Free</button>
+            <button class="btn btn-primary">Paid</button>
+          </div>
+        </div>
       </section>
       <section id="about" class="container">About</section>
       <section id="testimonial" class="container">Testimonial</section>
@@ -70,19 +88,76 @@
 
   <style>
 .container:not(#banner) {
-  background-color: red;
+  background-color: var(--secondary-black);
   height: 400px;
 }
 
 #banner {
-  gap: 30px;
   flex-direction: row;
 }
 
 #banner>div {
-  width: 50%;
   height: 100%;
-  background-color: var(--secondary-black);
+}
+
+.dp {
+  width: 57%;
+  background-image: url('./img/hasib-billah.png');
+  background-repeat: no-repeat;
+  background-size: 77% auto;
+  background-position-x: center, right;
+  background-position-y: 10px, bottom;
+}
+
+.slogan {
+  width: 43%;
+  /* background-color: var(--secondary-black); */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line-break {
+  display: block;
+}
+
+.slogan .title {
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+
+.slogan .sub-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--secondary-white);
+}
+
+.slogan p {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.action-btns {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+.action-btns .btn {
+  width: 50%;
+  height: 5rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  #banner {
+    flex-direction: column;
+  }
+
+  #banner>div {
+    width: 100%;
+  }
 }
 
   </style>

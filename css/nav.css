@@ -3,7 +3,7 @@ nav {
 }
 
 .nav-glass-effect {
-  background: rgba(23, 23, 23, 0.75); /* primary black with opacity */
+  background: rgba(30, 30, 30, 0.7); /* secondary black with opacity */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.4px);
   -webkit-backdrop-filter: blur(8.4px);
@@ -25,6 +25,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .nav-layout>div {
@@ -33,12 +34,10 @@ nav {
   gap: 3rem;
 }
 
-nav .home {
-  font-family: La Belle Aurore;
-  font-size: 2rem;
-  line-height: 1;
-  transform: scale(1.5);
-  margin-top: 3px;
+.nav-layout .home {
+  gap: 1.5rem;
+  font-size: 1.8rem;
+  margin-top: -2px;
 }
 
 .nav-layout a {
