@@ -1,7 +1,7 @@
-.footer {
+footer {
   padding: 1.5rem 0;
 
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 500;
 
   display: flex;
@@ -12,7 +12,7 @@
 
 @media screen and (max-width: 767px) {
   .footer-layout {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 

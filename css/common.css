@@ -1,15 +1,10 @@
 :root {
-  --primary-black: rgb(33, 22, 22);
-  --secondary-black: rgb(229,225,255);
-  --primary-white: white;
-  --secondary-white: rgba(29,23,71, .7);
+  --primary-black: rgb(23, 23, 23);
+  --secondary-black: rgb(30, 30, 30);
+  --primary-white: rgb(242, 242, 242);
+  --secondary-white: rgb(232, 232, 232);
 
-  --black1: #2a1a1a;
-  --black2: #1d2026;
-  --black3: #0d0d16;
-  --maroon1: #682d2e;
-  --seagreen1: #325162;
-  --gunmetal: #2c2f41;
+  --banner-top-margin: 5.24rem;
 }
 
 html {
@@ -32,7 +27,7 @@ body {
 }
 
 main {
-  margin-top: 5.66rem; /* For nav */
+  margin-top: var(--banner-top-margin);
 
   display: flex;
   flex-direction: column;
@@ -99,6 +94,7 @@ h4 {
 
 .container {
   width: 90%;
+  max-width: 1200px;
 
   display: flex;
   flex-direction: column;

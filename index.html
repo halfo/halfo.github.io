@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <title></title>
+  <title>Hasib Billah | Helping others to excel in their career</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,6 +24,8 @@
   <link rel="canonical" href="">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="./img/logo.svg">
+  <link rel="shortcut icon" href="./img/logo.svg">
+
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -34,7 +36,7 @@
 
 <body>
   <div id="app">
-    <section class="nav nav-glass-effect sticky">
+    <nav class="nav-glass-effect sticky">
       <div class="nav-layout">
         <div class="home">
           <a class="hover-underline-animate" href="/">Home</a>
@@ -47,7 +49,7 @@
           <a class="hover-underline-animate" href="#faq">FAQ</a>
         </div>
       </div>
-    </section>
+    </nav>
 
     <main>
       <section id="banner" class="container">Banner</section>
@@ -56,15 +58,19 @@
       <section id="session" class="container">Session</section>
       <section id="faq" class="container">FAQ</section>
     </main>
-    <section class="footer">
+    <footer>
       <span>Copyright © 2022 Cogitous, Ltd. All rights reserved.</span>
-    </section>
+    </footer>
   </div>
 
   <style>
 .container {
   background-color: red;
-  height: 700px;
+  height: 400px;
+}
+
+#banner {
+  height: calc(min(100vh - var(--banner-top-margin), 800px) - 2rem);
 }
   </style>
   <script src="js/main.js"></script>

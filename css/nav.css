@@ -1,9 +1,9 @@
-.nav {
+nav {
   width: 100vw;
 }
 
 .nav-glass-effect {
-  background: rgba(33, 22, 22, 0.75); /* same as primary black */
+  background: rgba(23, 23, 23, 0.75); /* primary black with opacity */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.4px);
   -webkit-backdrop-filter: blur(8.4px);
@@ -19,7 +19,7 @@
   padding: 1.5rem var(--paddding-aside);
   width: calc(100vw - 2 * var(--paddding-aside));
 
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 500;
 
   display: flex;
@@ -48,7 +48,7 @@
   position: absolute;
   width: 110%;
   transform: scaleX(0);
-  height: 3px;
+  height: 2px;
   bottom: -1px;
   left: -5%;
   background-color: var(--primary-white);
@@ -62,10 +62,10 @@
 }
 
 @media screen and (max-width: 767px) {
-  main {
-    margin-top: 0;
+  :root {
+    --banner-top-margin: 3rem;
   }
-  .nav {
+  nav {
     display: none;
   }
 }
