@@ -33,6 +33,14 @@ nav {
   gap: 3rem;
 }
 
+nav .home {
+  font-family: La Belle Aurore;
+  font-size: 2rem;
+  line-height: 1;
+  transform: scale(1.5);
+  margin-top: 3px;
+}
+
 .nav-layout a {
   color: var(--primary-white);
   text-decoration: none;
@@ -62,10 +70,13 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-  :root {
-    --banner-top-margin: 3rem;
+  nav.sticky {
+    position: absolute;
   }
-  nav {
+  nav .nav-btns {
     display: none;
+  }
+  nav .nav-layout {
+    justify-content: center;
   }
 }

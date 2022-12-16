@@ -4,7 +4,13 @@
   --primary-white: rgb(242, 242, 242);
   --secondary-white: rgb(232, 232, 232);
 
-  --banner-top-margin: 5.24rem;
+  --gradient-lighter: linear-gradient(
+      141deg, rgb(200, 124, 255) 0%,
+      rgb(116, 92, 252) 50%,
+      rgb(63, 241, 253) 100%
+    );
+
+  --banner-top-margin: 5.3rem;
 }
 
 html {
@@ -106,6 +112,12 @@ h4 {
   padding: 2.5rem;
   border-radius: 3px;
   background-color: #e2daeb; /* FIXME */
+}
+
+.gradient-bg {
+  background: var(--gradient-lighter);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 991px) {
