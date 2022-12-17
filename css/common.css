@@ -2,7 +2,8 @@
   --primary-black: rgb(23, 23, 23);
   --secondary-black: rgb(30, 30, 30);
   --primary-white: rgb(242, 242, 242);
-  --secondary-white: rgb(232, 232, 232);
+  --secondary-white: rgb(224, 224, 224);
+  --tertiary-white: rgb(175, 175, 175);
 
   --gradient-lighter: linear-gradient(
       141deg,
@@ -10,11 +11,6 @@
       #745cfc 50%,
       #3ff1fd 100%
     );
-  --gradient-warmer: linear-gradient(
-    90deg, #3ff1fd, #03a9f4, #c87cff, #f441a5, #ffeb3b, #3ff1fd
-  );
-
-  --banner-top-margin: 5.5rem;
 }
 
 html {
@@ -27,6 +23,20 @@ html {
   line-height: 1.4;
 }
 
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
 body {
   margin: 0;
   min-height: 100%;
@@ -37,8 +47,6 @@ body {
 }
 
 main {
-  margin-top: var(--banner-top-margin);
-
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -51,12 +59,12 @@ main {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: rgba(75, 75, 75, 0.3);
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: rgba(75, 75, 75, 0.3);
   text-shadow: none;
 }
 
@@ -68,14 +76,20 @@ fieldset {
   padding: 0;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
+section {
+  width: 100%;
+}
 
+section, .container {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
 }
 
 .card {
@@ -90,24 +104,28 @@ fieldset {
   -webkit-text-fill-color: transparent;
 }
 
+.line-break {
+  display: block;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
   h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
   p {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 }
  
 @media screen and (max-width: 767px) {
-  h1 {
-    font-size: 2.7rem;
+  p {
+    font-size: 1.6rem;
+  }
+  .line-break {
+    display: inline;
   }
   .card {
      padding: 1.5rem;
@@ -116,10 +134,10 @@ fieldset {
 
 @media screen and (max-width: 479px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.9rem;
   }
-  p {
-    font-size: 1.1rem;
+  h3 {
+    font-size: 1.6rem;
   }
   .container {
     width: 85%;

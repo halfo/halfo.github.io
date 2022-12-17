@@ -53,32 +53,44 @@
     </nav>
 
     <main>
-      <section id="banner" class="container">
-        <div class="dp"></div>
-        <div class="slogan">
-          <h1 class="title">
-            <span class="sub-title line-break">Hey Freshers!</span>
-            <span class="line-break">Land your <span class="gradient-bg">next job</span></span>
-            <span>with me!</span>
-          </h1>
+      <section id="banner">
+        <div class="container">
+          <div class="dp"><img /></div>
+          <div class="slogan">
+            <h3 class="sub-title line-break">Hey Freshers!</span>
+            <h1 class="title">
+              <span class="line-break">Land your <span class="gradient-bg">next job</span></span>
+              <span>with me!</span>
+            </h1>
 
-          <p>
-            From my experience, what I have seen is that interview is a very unpredictable process.
-            And many good candidates make subtle but huge blunders that they didn't notice.
-            Also, there are some key factors, if one can pull them up, the chance for them to land a job
-            goes real high. Join my session to learn more about these.
-          </p>
+            <p>
+              From my experience, what I have seen is that interview is a very unpredictable process.
+              And many good candidates make subtle but huge blunders that they didn't notice.
+            </p>
 
-          <div class="action-btns">
-            <button class="btn btn-depressed">Free</button>
-            <button class="btn btn-primary">Paid</button>
+            <div class="action-btns">
+              <button class="btn btn-depressed">Free</button>
+              <button class="btn btn-primary">Paid</button>
+            </div>
           </div>
         </div>
       </section>
-      <section id="about" class="container">About</section>
-      <section id="testimonial" class="container">Testimonial</section>
-      <section id="session" class="container">Session</section>
-      <section id="faq" class="container">FAQ</section>
+
+      <section id="about">
+        <div class="container">About</div>
+      </section>
+
+      <section id="testimonial">
+        <div class="container">Testimonial</div>
+      </section>
+
+      <section id="session">
+        <div class="container">Session</div>
+      </section>
+
+      <section id="faq">
+        <div class="container">FAQ</div>
+      </section>
     </main>
 
     <footer>
@@ -87,79 +99,10 @@
   </div>
 
   <style>
-.container:not(#banner) {
+section:not(#banner) {
   background-color: var(--secondary-black);
   height: 400px;
 }
-
-#banner {
-  flex-direction: row;
-}
-
-#banner>div {
-  height: 100%;
-}
-
-.dp {
-  width: 57%;
-  background-image: url('./img/hasib-billah.png');
-  background-repeat: no-repeat;
-  background-size: 77% auto;
-  background-position-x: center, right;
-  background-position-y: 10px, bottom;
-}
-
-.slogan {
-  width: 43%;
-  /* background-color: var(--secondary-black); */
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.line-break {
-  display: block;
-}
-
-.slogan .title {
-  font-size: 4.2rem;
-  font-weight: 700;
-}
-
-.slogan .sub-title {
-  font-size: 2.2rem;
-  font-weight: 400;
-  color: var(--secondary-white);
-}
-
-.slogan p {
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-
-.action-btns {
-  display: flex;
-  width: 100%;
-  gap: 1.5rem;
-  padding: 2rem 0;
-}
-.action-btns .btn {
-  width: 50%;
-  height: 5rem;
-  font-size: 2rem;
-}
-
-@media screen and (max-width: 767px) {
-  #banner {
-    flex-direction: column;
-  }
-
-  #banner>div {
-    width: 100%;
-  }
-}
-
   </style>
   <script src="js/main.js"></script>
 </body>

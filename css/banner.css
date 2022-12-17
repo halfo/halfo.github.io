@@ -1,6 +1,110 @@
 @import url(./button.css);
 
 #banner {
-  height: calc(100vh - var(--banner-top-margin));
-  /* height: calc(min(100vh - var(--banner-top-margin), 800px) - 2rem); */
+  --padding-top: calc(5.5rem + 3.5rem);
+
+  padding-top: var(--padding-top);
+  background-color: var(--primary-black);
+  box-shadow: 0 10px 15px #0000008c;
+}
+
+#banner .container {
+  height: calc(100vh - var(--padding-top));
+  max-height: calc(85vw - var(--padding-top));
+
+  flex-direction: row;
+  gap: 3rem;
+}
+
+#banner .container>div {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.dp {
+  align-items: center;
+  justify-content: end;
+}
+
+.dp img {
+  content: url(../img/hasib-billah.png);
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slogan {
+  justify-content: center;
+}
+
+.slogan .title {
+  margin-top: 0;
+}
+
+.slogan .sub-title {
+  margin: 0;
+}
+
+.slogan p {
+  margin: 1rem 0 4rem 0;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--tertiary-white);
+}
+
+.action-btns {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.action-btns .btn {
+  height: 100%;
+  width: 100%;;
+  height: 5.5rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 479px) {
+  #banner .action-btns {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #banner {
+    box-shadow: none;
+  }
+
+  #banner .container {
+    height: 100%;
+    max-height: 100%;
+    flex-direction: column;
+  }
+
+  #banner .container>div {
+    width: 100%;
+  }
+
+  #banner .dp img {
+    content: url(../img/hasib-billah-avatar.png);
+    height: 250px;
+    border: 5px solid var(--secondary-black);
+    border-radius: 500px;
+    background: var(--gradient-lighter);
+  }
+
+  #banner .slogan p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  #banner .container {
+    height: 800px;
+  }
 }
