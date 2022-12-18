@@ -1,5 +1,3 @@
-@import url(./button.css);
-
 #banner {
   --padding-top: calc(5.5rem + 3.5rem);
 
@@ -40,19 +38,8 @@
   justify-content: center;
 }
 
-.slogan .title {
-  margin-top: 0;
-}
-
-.slogan .sub-title {
-  margin: 0;
-}
-
 .slogan p {
-  margin: 1rem 0 4rem 0;
-  line-height: 1.6;
-  font-weight: 400;
-  color: var(--tertiary-white);
+  margin-bottom: 4rem;
 }
 
 .action-btns {
@@ -63,8 +50,7 @@
 }
 
 .action-btns .btn {
-  height: 100%;
-  width: 100%;;
+  width: 100%;
   height: 5.5rem;
   font-size: 2rem;
 }
