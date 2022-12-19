@@ -1,0 +1,179 @@
+:root {
+  --primary-black: rgb(23, 23, 23);
+  --secondary-black: rgb(30, 30, 30);
+  --primary-white: rgb(242, 242, 242);
+  --secondary-white: rgb(175, 175, 175);
+
+  --gradient-lighter: linear-gradient(
+      141deg,
+      #c87cff 0%,
+      #745cfc 50%,
+      #3ff1fd 100%
+    );
+}
+
+html {
+  color: var(--primary-white);
+  background-color: var(--primary-black);
+
+  height: 100%;
+  font-family: 'Open Sans';
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+h1 {
+  margin: 0 0 4rem 0;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+p {
+  color: var(--secondary-white);
+}
+
+p, details {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+blockquote {
+  margin: 0;
+  font-size: 2.1rem;
+  line-height: 1.67;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+#app {
+  min-height: var(--viewport-height);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+main>section:not(:first-child) {
+  padding-top: 14rem;
+}
+
+/*
+ * Remove text-shadow in selection highlight.
+ */
+
+::-moz-selection {
+  background: rgba(75, 75, 75, 0.3);
+  text-shadow: none;
+}
+
+::selection {
+  background: rgba(75, 75, 75, 0.3);
+  text-shadow: none;
+}
+
+img, svg, video { vertical-align: middle }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100%;
+}
+
+section, .container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+}
+
+.highlight {
+  background: var(--gradient-lighter);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.line-break {
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+  h2 {
+    font-size: 2.9rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  p, details {
+    font-size: 1.7rem;
+  }
+  blockquote {
+    font-size: 1.85rem;
+  }
+
+  .line-break { display: inline; }
+}
+ 
+@media screen and (max-width: 767px) {
+  p, details {
+    font-size: 1.6rem;
+  }
+  main>section:not(:first-child) {
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  h1 {
+    font-size: 3.9rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  blockquote {
+    font-size: 1.5rem;
+  }
+  .container {
+    width: 85%;
+  }
+}
