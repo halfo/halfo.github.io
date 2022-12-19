@@ -1,5 +1,5 @@
 footer {
-  padding: 1.5rem 0;
+  padding: 3rem 0;
 
   font-size: 1.6rem;
   font-weight: 500;
@@ -8,6 +8,41 @@ footer {
   flex-direction: column;
   align-items: center;
 
+  background-color: var(--secondary-black);
+}
+
+#faq .container {
+  padding-bottom: 10rem;
+}
+
+summary {
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;  
+}
+
+summary:after {
+  content: "\002B";
+  font-size: 2.2rem;
+}
+
+details[open] summary {
+    border-bottom: 2px solid var(--secondary-white);
+}
+
+details[open] summary:after {
+  content: "\00D7";
+}
+
+details[open] div {
+  padding: 1rem 1rem 2rem 1rem;
 }
 
 @media screen and (max-width: 767px) {

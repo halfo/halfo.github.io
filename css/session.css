@@ -7,3 +7,10 @@
   font-size: 1.6rem;
   margin-top: 3rem;
 }
+
+#session ul>li {
+  font-size: 1.6rem;
+  background: url(../img/tick.svg) no-repeat left top; 
+  padding-left: 30px;
+  margin-bottom: 1.5rem;
+}

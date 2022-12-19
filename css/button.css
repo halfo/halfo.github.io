@@ -1,6 +1,6 @@
 .btn-depressed {
   --bg: var(--secondary-black);
-  --border: var(--tertiary-white);
+  --border: var(--primary-white);
 }
 
 .btn-primary {
@@ -21,5 +21,5 @@
 .btn:hover:not(:active) {
   transform: translate(0.40rem,-0.40rem);
   background: var(--bg);
-  box-shadow: -0.40rem 0.40rem var(--tertiary-white);
+  box-shadow: -0.40rem 0.40rem var(--primary-white);
 }

@@ -40,6 +40,18 @@
   }
 }
 
+.cards.cards-compact {
+  flex-direction: column;
+  gap: 0;
+}
+
+.cards-compact .card {
+  padding: 0 1rem;
+  border: none;
+  box-shadow: none;
+  border-radius: unset;
+}
+
 @media screen and (max-width: 767px) {
   .cards {
     width: calc(100% - 10rem);
