@@ -1,5 +1,3 @@
-import { debounce } from "./lib";
-
 const activeClass = 'slider-btn-active';
 
 const slider = document.getElementsByClassName('slider')[0];
@@ -43,6 +41,15 @@ const scrollEventListener = () => {
     sliderButtons[i].classList.add(activeClass);
     break;
   }
+}
+
+const debounce = (fn, timeout) => {
+  let timer;
+
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { fn.apply(this, args); }, timeout);
+  };
 }
 
 slidesContainer.addEventListener(
