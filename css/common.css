@@ -1,10 +1,10 @@
 :root {
-  --primary-black: rgb(23, 23, 23);
-  --secondary-black: rgb(30, 30, 30);
-  --primary-white: rgb(242, 242, 242);
-  --secondary-white: rgb(175, 175, 175);
+  --darker: rgb(23, 23, 23);
+  --dark: rgb(30, 30, 30);
+  --light: rgb(242, 242, 242);
+  --ash: rgb(175, 175, 175);
 
-  --gradient-lighter: linear-gradient(
+  --gradient: linear-gradient(
       141deg,
       #c87cff 0%,
       #745cfc 50%,
@@ -13,8 +13,8 @@
 }
 
 html {
-  color: var(--primary-white);
-  background-color: var(--primary-black);
+  color: var(--light);
+  background-color: var(--darker);
 
   height: 100%;
   font-family: 'Open Sans';
@@ -41,7 +41,7 @@ h3 {
 }
 
 p {
-  color: var(--secondary-white);
+  color: var(--ash);
 }
 
 p, details {
@@ -122,7 +122,7 @@ section, .container {
 }
 
 .highlight {
-  background: var(--gradient-lighter);
+  background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

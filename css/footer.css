@@ -8,7 +8,7 @@ footer {
   flex-direction: column;
   align-items: center;
 
-  background-color: var(--secondary-black);
+  background-color: var(--dark);
 }
 
 footer .container {

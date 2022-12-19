@@ -21,7 +21,7 @@ summary:after {
 }
 
 details[open] summary {
-    border-bottom: 2px solid var(--secondary-white);
+    border-bottom: 2px solid var(--ash);
 }
 
 details[open] summary:after {

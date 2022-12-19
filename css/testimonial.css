@@ -4,7 +4,7 @@
   padding: 4rem;
   text-align: center;
 
-	background-color: var(--secondary-black);
+	background-color: var(--dark);
   border-radius: 50px 0;
 }
 
@@ -23,7 +23,7 @@
 
 #testimonial blockquote::before,
 #testimonial blockquote::after {
-  color: var(--primary-white);
+  color: var(--light);
   display: block;
   width: 56px;
   height: 68px;
@@ -108,18 +108,18 @@
 }
 
 .slider-btn {
-  color: var(--primary-white);
+  color: var(--light);
   height: 6px;
   width: 70px;
   border: none;
-  background-color: var(--secondary-black);
+  background-color: var(--dark);
   border-radius: 6px;
   cursor: pointer;
 }
 
 .slider-btn-active {
-  background: var(--gradient-lighter);
-  /* background: var(--primary-white); */
+  background: var(--gradient);
+  /* background: var(--light); */
   transition: background 1000ms linear;
 }
 

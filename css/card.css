@@ -13,7 +13,7 @@
 
   padding: 2.5rem 5rem 5rem 5rem;
 
-  border: 4px solid var(--secondary-black);
+  border: 4px solid var(--dark);
   border-radius: 20px;
 
   box-shadow:  13px -13px 26px rgb(18, 18, 18),
@@ -21,8 +21,8 @@
 }
 
 .card:hover {
-  background: linear-gradient(var(--primary-black), var(--primary-black)) padding-box,
-              var(--gradient-lighter) border-box;
+  background: linear-gradient(var(--darker), var(--darker)) padding-box,
+              var(--gradient) border-box;
   transition: 0.4s;
   border: 4px solid transparent;
 }

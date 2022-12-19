@@ -42,7 +42,7 @@ nav {
 }
 
 .nav-layout a {
-  color: var(--primary-white);
+  color: var(--light);
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ nav {
   height: 2px;
   bottom: -1px;
   left: -5%;
-  background-color: var(--primary-white);
+  background-color: var(--light);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }

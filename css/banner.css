@@ -4,8 +4,8 @@
   padding-top: var(--padding-top);
   margin-bottom: 3.5rem;
 
-  background-color: var(--primary-black);
-  box-shadow: 0 10px 15px #0000008c;
+  background-color: var(--darker);
+  box-shadow: 0 10px 15px #00000025;
 }
 
 #banner .container {
@@ -81,9 +81,9 @@
   #banner .dp img {
     content: url(../img/hasib-billah-avatar.png);
     height: 250px;
-    border: 5px solid var(--secondary-black);
+    border: 5px solid var(--dark);
     border-radius: 500px;
-    background: var(--gradient-lighter);
+    background: var(--gradient);
   }
 
   #banner .slogan p {
