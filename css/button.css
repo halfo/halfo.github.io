@@ -12,6 +12,7 @@
   font-weight: 500;
   border-radius: 50px;
 
+  cursor: pointer;
   color: var(--primary-white);
   border: 1px solid var(--border);
   background: var(--bg);
