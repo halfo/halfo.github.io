@@ -13,47 +13,35 @@ const scrollToElem = (elem) => elem.scrollIntoView({
   inline: 'nearest',
 });
 
+const changeActiveButton = (targetIdx) => sliderButtons.forEach(
+  (b, idx) => b.classList[targetIdx === idx ? 'add' : 'remove'](activeClass)
+);
+
+let targetButtonIdx = null;
 sliderButtons.forEach((button, idx) => {
   button.addEventListener('click', function () {
     if (this.classList.contains(activeClass)) return;
 
+    targetButtonIdx = idx;
     scrollToElem(slides[idx]);
-
-    sliderButtons.forEach(
-      b => b.classList[b === this ? 'add' : 'remove']('slider-btn-active')
-    );
+    changeActiveButton(idx);
 
     return false;
   })
 });
 
-const scrollEventListener = () => {
-  for (let i = 0; i < slides.length; ++i) {
-    const { left, right } = slides[i].getBoundingClientRect();
-    const mid = (left + right) / 2;
+const observer = new IntersectionObserver((elems) => {
+  elems.forEach(elem => {
+    if (elem.isIntersecting) {
+      const key = +elem.target.getAttribute('key');
 
-    if (mid < 0 || screen.width < mid) continue;
+      if (targetButtonIdx === null) {
+        changeActiveButton(key);
+      } else if (targetButtonIdx === key) {
+        targetButtonIdx = null;
+      }
+    }
+  });
+})
 
-    if (sliderButtons[i].classList.contains(activeClass)) break;
-
-    const activeButton = sliderButtons.find(button => button.classList.contains(activeClass));
-    activeButton.classList.remove(activeClass);
-    sliderButtons[i].classList.add(activeClass);
-    break;
-  }
-}
-
-const debounce = (fn, timeout) => {
-  let timer;
-
-  return (...args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => { fn.apply(this, args); }, timeout);
-  };
-}
-
-slidesContainer.addEventListener(
-  'scroll',
-  debounce(scrollEventListener, 40),
-  { passive: true },
-);
+slides.forEach(slide => observer.observe(slide));
