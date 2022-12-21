@@ -22,11 +22,15 @@
 
   display: flex;
   flex-direction: column;
+
+  transition: all 1s;
 }
 
 .dp {
   align-items: center;
   justify-content: end;
+
+  filter: blur(7px);
 }
 
 .dp img {
@@ -38,6 +42,8 @@
 
 .slogan {
   justify-content: center;
+
+  transform: translateX(100%);
 }
 
 .slogan p {

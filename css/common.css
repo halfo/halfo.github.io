@@ -5,11 +5,11 @@
   --ash: rgb(175, 175, 175);
 
   --gradient: linear-gradient(
-      141deg,
-      #c87cff 0%,
-      #745cfc 50%,
-      #3ff1fd 100%
-    );
+    141deg,
+    #c87cff 0%,
+    #745cfc 50%,
+    #3ff1fd 100%
+  );
 }
 
 html {
@@ -131,6 +131,17 @@ section, .container {
 
 .line-break {
   display: block;
+}
+
+.show {
+  filter: blur(0) !important;
+  transform: translate(0) !important;
+}
+
+h1:not(.slogan *), h3:not(.slogan *), .slider {
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateY(30%);
 }
 
 @media screen and (max-width: 991px) {
