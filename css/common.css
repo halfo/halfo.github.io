@@ -17,9 +17,11 @@ html {
   background-color: var(--darker);
 
   height: 100%;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 10px;
   line-height: 1.4;
+
+  scroll-behavior: smooth;
 }
 
 h1 {
