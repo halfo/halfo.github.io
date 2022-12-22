@@ -1,5 +1,5 @@
 #banner {
-  --padding-top: calc(5.5rem + 3.5rem);
+  --padding-top: calc(4.5rem + 3.5rem);
 
   padding-top: var(--padding-top);
   margin-bottom: 3.5rem;
@@ -9,8 +9,7 @@
 }
 
 #banner .container {
-  height: calc(100vh - var(--padding-top));
-  max-height: calc(85vw - var(--padding-top));
+  height: calc(min(70vw, 800px));
 
   flex-direction: row;
   gap: 3rem;
@@ -95,11 +94,5 @@
 
   #banner .slogan p {
     margin-bottom: 2rem;
-  }
-}
-
-@media screen and (min-width: 1601px) {
-  #banner .container {
-    height: 800px;
   }
 }
