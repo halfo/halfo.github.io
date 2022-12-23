@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 991px) {
   #banner .action-btns {
     flex-direction: column;
   }
@@ -97,5 +97,15 @@
 
   #banner .slogan p {
     margin-bottom: 2rem;
+  }
+
+  #banner .action-btns {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #banner .action-btns {
+    flex-direction: column;
   }
 }
