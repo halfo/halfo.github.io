@@ -14,9 +14,24 @@
 
   cursor: pointer;
   color: var(--light);
-  border: 1px solid var(--border);
   background: var(--bg);
   transition: 0.2s;
+
+  /* for transparent border */
+  border: none;
+  position: relative;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+/* for transparent border */
+.btn::before {
+  content: '';
+  position: absolute;
+  border-radius: 50px;
+  inset: 0px;
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, .3);
 }
 
 .btn:hover:not(:active) {
