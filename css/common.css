@@ -5,10 +5,9 @@
   --ash: rgb(175, 175, 175);
 
   --gradient: linear-gradient(
-    141deg,
-    #c87cff 0%,
-    #745cfc 50%,
-    #3ff1fd 100%
+    to right,
+    rgb(96, 108, 136),
+    rgb(63, 76, 107)
   );
 }
 
