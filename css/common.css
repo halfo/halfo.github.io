@@ -125,6 +125,22 @@ section, .container {
   max-width: 1200px;
 }
 
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  left: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--gradient);
+}
+
 .highlight {
   background: var(--gradient);
   -webkit-background-clip: text;
