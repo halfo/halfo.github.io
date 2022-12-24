@@ -15,11 +15,12 @@ summary::-webkit-details-marker {
 }
 
 summary:after {
-  content: '▲';
+  content: '\002B';
   position: absolute;
-  right: 1.5rem;
-  font-size: 1.5rem;
-  transform-origin: .75rem 55%;
+  top: 3px;
+  right: 2rem;
+  font-size: 2.2rem;
+  transform-origin: 52% 58%;
   transition: .35s transform ease;
 }
 
@@ -28,7 +29,7 @@ details[open] summary {
 }
 
 details[open] summary:after {
-  transform: rotate(180deg);
+  transform: rotate(135deg);
 }
 
 details[open] > *:not(summary) {
