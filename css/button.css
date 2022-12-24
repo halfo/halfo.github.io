@@ -31,7 +31,8 @@
   border-radius: 50px;
   inset: 0px;
   background-color: transparent;
-  border: 3px solid rgba(255, 255, 255, .3);
+  border: 3px solid var(--light);
+  opacity: 30%;
 }
 
 .btn:hover:not(:active) {
