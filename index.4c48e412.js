@@ -1,0 +1,2 @@
+const animationObserver=new IntersectionObserver((e=>{e.forEach((e=>{e.isIntersecting&&e.target.classList.add("show")}))})),classes=["h1:not(.slogan *)","h3:not(.slogan *)",".dp",".slogan",".card",".slider"],elems=document.querySelectorAll([classes].join(", "));elems.forEach((e=>animationObserver.observe(e)));const detailsList=[...document.getElementsByTagName("details")];detailsList.forEach((e=>e.addEventListener("toggle",(s=>e.open&&detailsList.forEach((s=>s.open=s===e))))));
+//# sourceMappingURL=index.4c48e412.js.map
