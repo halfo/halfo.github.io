@@ -2,8 +2,14 @@
   padding-bottom: 10rem;
 }
 
+#faq .cards-compact .card:hover,
+#faq .cards-compact .card:has(details[open]) {
+  background: var(--dark);
+  border-radius: 5px;
+}
+
 summary {
-  padding: 1rem;
+  padding: 1rem 5rem 1rem 1rem;
   list-style: none;
   display: flex;
   justify-content: space-between;  
