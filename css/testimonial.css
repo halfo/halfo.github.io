@@ -36,14 +36,23 @@
 
 .slider {
   margin-top: 2rem;
-  width: 850px;
+  width: 100%;
+  max-width: 1050px;
   text-align: center;
   overflow: hidden;
 }
 
 .slides {
+  --padding-x: calc(max(75px, calc((100% - 850px) / 2)));
+
+  width: 100%;
+  padding: 0 var(--padding-x);
+
+  box-sizing: border-box;
+  box-shadow: inset 8.5rem 0 4rem -5rem var(--darker), inset -8.5rem 0 4rem -5rem var(--darker);
+
   display: flex;
-  gap: 20vw;
+  gap: 15vw;
 
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -63,9 +72,9 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-.slides>div {
+.slide {
   width: 100%;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   flex-shrink: 0;
   transform-origin: center center;
   transform: scale(1);
@@ -76,27 +85,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-.slider>button {
-  display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: white;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 0 0 0.5rem 0;
-  position: relative;
-}
-
-.slider>button:active {
-  top: 1px;
-}
-
-.slider>button:focus {
-  background: #000;
+  z-index: -1;
 }
 
 .slider-btns {
@@ -159,8 +149,8 @@
 }
 
 @media screen and (max-width: 991px) {
-  .slider {
-    width: 90%;
+  .slides {
+    --padding-x: 10%;
   }
   .slider-btns {
     padding-bottom: 2rem;
@@ -168,6 +158,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  .slides {
+    --padding-x: 5rem;
+  }
   .slider-person {
     margin-top: 4rem;
   }
@@ -177,8 +170,9 @@
 }
 
 @media screen and (max-width: 479px) {
-  .slider {
-    width: 95%;
+  .slides {
+    --padding-x: 0;
+    box-shadow: none;
   }
 }
  
