@@ -3,12 +3,14 @@
   --dark: rgb(30, 30, 30);
   --light: rgb(242, 242, 242);
   --ash: rgb(175, 175, 175);
+  --dark-ash: rgba(10, 10, 10, 0.55);
 
   --gradient: linear-gradient(
     to right,
     rgb(96, 108, 136),
     rgb(63, 76, 107)
   );
+  --gradient-fallback: #515d7a;
 }
 
 html {
@@ -121,25 +123,28 @@ section, .container {
   align-items: center;
 }
 
+mark {
+  color: inherit;
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    var(--gradient-fallback) 60%,
+    var(--gradient-fallback) 90%,
+    transparent 90%
+  );
+}
+
+a[target="_blank"] {
+  color: inherit;
+  font-style: italic;
+
+  text-decoration-color: var(--gradient-fallback);
+  text-decoration-thickness: 2px;
+}
+
 .container {
   width: 90%;
   max-width: 1200px;
-}
-
-.underline {
-  position: relative;
-  display: inline-block;
-}
-
-.underline::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  bottom: 5%;
-  left: 0;
-  height: 3px;
-  border-radius: 2px;
-  background: var(--gradient);
 }
 
 .highlight {
@@ -164,8 +169,12 @@ h1:not(.slogan *), h3:not(.slogan *), .slider {
 }
 
 @media screen and (max-width: 991px) {
+  html {
+    font-size: 9px;
+  }
+
   h1 {
-    font-size: 4.2rem;
+    font-size: calc(min(4.6vw, 4.2rem));
   }
   h2 {
     font-size: 2.9rem;
@@ -179,11 +188,12 @@ h1:not(.slogan *), h3:not(.slogan *), .slider {
   blockquote {
     font-size: 1.85rem;
   }
-
-  .line-break { display: inline; }
 }
  
 @media screen and (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
   p, details {
     font-size: 1.6rem;
   }
