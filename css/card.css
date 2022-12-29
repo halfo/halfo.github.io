@@ -13,7 +13,7 @@
 
   padding: 2.5rem 5rem 5rem 5rem;
 
-  border: 4px solid var(--dark);
+  border: 4px solid var(--darker);
   border-radius: 20px;
 
   transition: transform 1s;
@@ -21,14 +21,14 @@
 
 .card-left {
   transform: translateX(-100%);
-  box-shadow:  13px -13px 26px #0f0f0f,
-               -13px 13px 26px #1f1f1f;
+  box-shadow:  13px -13px 26px var(--dark-ash),
+               -13px 13px 26px var(--dark-ash);
 }
 
 .card-right {
   transform: translateX(100%);
-  box-shadow:  -13px -13px 26px #0f0f0f,
-               13px 13px 26px #1f1f1f;
+  box-shadow:  -13px -13px 26px var(--dark-ash),
+               13px 13px 26px var(--dark-ash);
 }
 
 .card:hover {
