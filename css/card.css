@@ -8,6 +8,8 @@
 }
 
 .card {
+  --shadow-color: rgba(10, 10, 10, 0.55);
+
   display: flex;
   flex-direction: column;
 
@@ -21,14 +23,14 @@
 
 .card-left {
   transform: translateX(-100%);
-  box-shadow:  13px -13px 26px var(--dark-ash),
-               -13px 13px 26px var(--dark-ash);
+  box-shadow:  13px -13px 26px var(--shadow-color),
+               -13px 13px 26px var(--shadow-color);
 }
 
 .card-right {
   transform: translateX(100%);
-  box-shadow:  -13px -13px 26px var(--dark-ash),
-               13px 13px 26px var(--dark-ash);
+  box-shadow:  -13px -13px 26px var(--shadow-color),
+               13px 13px 26px var(--shadow-color);
 }
 
 .card:hover {

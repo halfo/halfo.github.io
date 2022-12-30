@@ -1,16 +1,16 @@
 :root {
   --darker: rgb(23, 23, 23);
   --dark: rgb(30, 30, 30);
-  --light: rgb(242, 242, 242);
   --ash: rgb(175, 175, 175);
-  --dark-ash: rgba(10, 10, 10, 0.55);
+  --light: rgb(242, 242, 242);
 
   --gradient: linear-gradient(
-    to right,
-    rgb(96, 108, 136),
-    rgb(63, 76, 107)
+    141deg,
+    rgb(200, 124, 255) 0%,
+    rgb(116, 92, 252) 50%,
+    rgb(63, 241, 253) 100%
   );
-  --gradient-fallback: #515d7a;
+  --gradient-fallback: darkslateblue;
 }
 
 html {
@@ -127,7 +127,7 @@ mark {
   color: inherit;
   background: linear-gradient(
     180deg,
-    transparent 60%,
+    transparent 50%,
     var(--gradient-fallback) 60%,
     var(--gradient-fallback) 90%,
     transparent 90%
@@ -149,6 +149,7 @@ a[target="_blank"] {
 
 .highlight {
   background: var(--gradient);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
