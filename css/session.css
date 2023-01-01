@@ -1,6 +1,11 @@
 #session .card {
   justify-content: space-between;
 }
+#session h2 .sub-header {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--ash);
+}
 
 #session .btn {
   height: 5rem;
