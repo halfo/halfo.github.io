@@ -109,8 +109,8 @@
 }
 
 .slider-btn-active {
+  background-color: var(--gradient-fallback);
   background: var(--gradient);
-  /* background: var(--light); */
   transition: background 1000ms linear;
 }
 

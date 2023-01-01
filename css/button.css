@@ -3,6 +3,7 @@
 }
 
 .btn-primary {
+  --bg: var(--gradient-fallback);
   --bg: var(--gradient);
 }
 

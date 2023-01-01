@@ -34,6 +34,7 @@
 }
 
 .card:hover {
+  background-color: var(--gradient-fallback);
   background: linear-gradient(var(--darker), var(--darker)) padding-box,
               var(--gradient) border-box;
   transition: 0.4s;

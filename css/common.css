@@ -8,7 +8,8 @@
     141deg,
     rgb(200, 124, 255) 0%,
     rgb(116, 92, 252) 50%,
-    rgb(63, 241, 253) 100%
+    rgb(116, 92, 252) 60%,
+    rgb(45, 218, 231) 100%
   );
   --gradient-fallback: darkslateblue;
 }
@@ -148,6 +149,7 @@ a[target="_blank"] {
 }
 
 .highlight {
+  background-color: var(--gradient-fallback);
   background: var(--gradient);
   background-clip: text;
   -webkit-background-clip: text;
@@ -195,6 +197,9 @@ h1:not(.slogan *), h3:not(.slogan *), .slider {
   html {
     font-size: 10px;
   }
+  h1 {
+    font-size: 4.2rem;
+  }
   p, details {
     font-size: 1.6rem;
   }
@@ -205,7 +210,7 @@ h1:not(.slogan *), h3:not(.slogan *), .slider {
 
 @media screen and (max-width: 479px) {
   h1 {
-    font-size: 3.9rem;
+    font-size: calc(min(9vw, 3.9rem));
   }
   h2 {
     font-size: 2.5rem;
