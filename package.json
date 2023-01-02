@@ -7,6 +7,7 @@
   "author": "",
   "scripts": {
     "start": "parcel ./index.html --open",
+    "gen-files": "node ./script/createFavicons.js",
     "copy-cname": "cp CNAME dist",
     "prebuild-dev": "shx rm -rf dist/*",
     "prebuild": "shx rm -rf dist/*",
