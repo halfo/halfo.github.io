@@ -7,7 +7,7 @@
   "author": "",
   "scripts": {
     "start": "parcel ./index.html --open",
-    "gen-n-copy-files": "node ./script/createFavicons.js && cp CNAME dist && cp robots.txt dist",
+    "gen-n-copy-files": "node ./script/createFavicons.js && cp CNAME dist && cp robots.txt dist && cp img/website-preview.png dist",
     "prebuild-dev": "shx rm -rf dist/*",
     "prebuild": "shx rm -rf dist/*",
     "build-dev": "parcel build ./index.html --no-optimize --public-url ./ && npm run gen-n-copy-files",
