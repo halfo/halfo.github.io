@@ -7,12 +7,11 @@
   "author": "",
   "scripts": {
     "start": "parcel ./index.html --open",
-    "gen-files": "node ./script/createFavicons.js",
-    "copy-cname": "cp CNAME dist",
+    "gen-n-copy-files": "node ./script/createFavicons.js && cp CNAME dist && cp robots.txt dist",
     "prebuild-dev": "shx rm -rf dist/*",
     "prebuild": "shx rm -rf dist/*",
-    "build-dev": "parcel build ./index.html --no-optimize --public-url ./ && npm run copy-cname",
-    "build": "parcel build ./index.html --public-url ./ && npm run copy-cname",
+    "build-dev": "parcel build ./index.html --no-optimize --public-url ./ && npm run gen-n-copy-files",
+    "build": "parcel build ./index.html --public-url ./ && npm run gen-n-copy-files",
     "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "devDependencies": {
