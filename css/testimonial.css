@@ -130,13 +130,13 @@
 }
 
 .slider-person-avatar {
-  height: 48px;
-  width: 48px;
+  height: 58px;
+  width: 58px;
   border-radius: 50px;
 }
 
 .slider-person-name {
-  width: 160px;
+  width: 180px;
   font-size: 1.5rem;
   font-weight: 500;
   text-align: left;
