@@ -132,7 +132,10 @@
 .slider-person-avatar {
   height: 58px;
   width: 58px;
-  border-radius: 50px;
+  border-radius: 58px;
+
+  background-color: var(--ash);
+  border: 2px solid var(--dark);
 }
 
 .slider-person-name {

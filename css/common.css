@@ -3,6 +3,7 @@
   --dark: rgb(30, 30, 30);
   --ash: rgb(175, 175, 175);
   --light: rgb(242, 242, 242);
+  --light-transparent: rgba(242, 242, 242, .8);
 
   --gradient: linear-gradient(
     141deg,
@@ -11,7 +12,7 @@
     rgb(116, 92, 252) 60%,
     rgb(45, 218, 231) 100%
   );
-  --gradient-fallback: darkslateblue;
+  --gradient-fallback: rgba(119, 80, 221, .7);
 }
 
 html {
@@ -129,7 +130,7 @@ section, .container {
 }
 
 mark {
-  color: inherit;
+  color: var(--light-transparent);
   background: linear-gradient(
     180deg,
     transparent 50%,
