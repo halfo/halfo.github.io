@@ -18,8 +18,17 @@
   transition: 0.2s;
 }
 
-.btn:hover:not(:active) {
-  transform: translate(0.40rem,-0.40rem);
-  background: var(--bg);
-  box-shadow: -0.40rem 0.40rem var(--light);
+.btn:active {
+  transform: scale(0.95);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn:active {
+    transform: none;
+  }
+  .btn:hover:not(:active) {
+    transform: translate(0.40rem, -0.40rem);
+    background: var(--bg);
+    box-shadow: -0.40rem 0.40rem var(--light);
+  }
 }
