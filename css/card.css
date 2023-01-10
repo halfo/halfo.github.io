@@ -33,12 +33,14 @@
                13px 13px 26px var(--shadow-color);
 }
 
-.card:hover {
-  background-color: var(--gradient-fallback);
-  background: linear-gradient(var(--darker), var(--darker)) padding-box,
-              var(--gradient) border-box;
-  transition: 0.4s;
-  border: 4px solid transparent;
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    background-color: var(--gradient-fallback);
+    background: linear-gradient(var(--darker), var(--darker)) padding-box,
+                var(--gradient) border-box;
+    transition: 0.4s;
+    border: 4px solid transparent;
+  }
 }
 
 .card h2 {
